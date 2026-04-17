@@ -1,0 +1,16 @@
+filebeat.inputs:
+  - type: log
+    enabled: true
+    paths:
+      - /sample-logs/*.log
+    fields:
+      log_type: sample_syslog
+    fields_under_root: true
+    multiline.pattern: '^\w{3}\s+\d'
+    multiline.negate: true
+    multiline.match: after
+
+output.logstash:
+  hosts: ["logstash:5044"]
+
+logging.level: info
