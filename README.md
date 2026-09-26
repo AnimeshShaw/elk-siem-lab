@@ -1,5 +1,7 @@
 # ELK SIEM Lab — Windows Docker Setup Guide
 
+A local ELK (Elasticsearch, Logstash, Kibana) stack for learning log ingestion, search and detection, built for workshop students to spin up on Windows in one sitting.
+
 ## Prerequisites
 
 1. **Docker Desktop** (Windows) with WSL2 backend enabled
